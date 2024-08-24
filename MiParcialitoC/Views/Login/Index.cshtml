@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="~/css/login.css" />
+</head>
+<body>
+    <div class="bg">
+        <div class="login-container">
+            <div class="login-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Open_English_Logo.png" alt="Open English Logo" class="logo">
+                <h2>Welcome Student</h2>
+                <form>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button asp-action="Inicio" asp-controller="Inicio" type="submit">Log In</button>
+                    <div class="remember-me">
+                        <label>
+                            <input type="checkbox" name="remember"> Remember Me
+                        </label>
+                        <a href="#">Password Reset</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
